@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/logs/index/index",
+    "pages/list/index/index",
+    "pages/my/index/index",
+    "pages/list/form/index",
+    "pages/case/wechatAddress/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "donaf",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "@tabBarColor",
+    "selectedColor": "@tabBarSelectedColor",
+    "borderStyle": "@tabBarBorderStyle",
+    "backgroundColor": "@tabBarBackgroundColor",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "iconPath": "@iconPathComponent",
+        "selectedIconPath": "@selectedIconPathComponent",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/index/index",
+        "iconPath": "@iconPathComponent",
+        "selectedIconPath": "@selectedIconPathComponent",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/list/index/index",
+        "iconPath": "@iconPathAPI",
+        "selectedIconPath": "@selectedIconPathAPI",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/my/index/index",
+        "iconPath": "@iconPathCloud",
+        "selectedIconPath": "@selectedIconPathCloud",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "themeLocation": "demo.theme.json",
+  "darkmode": true,
+  "resizable": true,
+  "usingComponents": {
+    "van-picker": "@vant/weapp/picker/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-popup": "@vant/weapp/popup/index"
+  },
+  "permission": {}
+}

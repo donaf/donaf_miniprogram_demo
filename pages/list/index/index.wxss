@@ -1,0 +1,11 @@
+/* pages/list/index/index.wxss */
+
+
+.class-input {
+  margin: 20rpx;
+  padding:10rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}

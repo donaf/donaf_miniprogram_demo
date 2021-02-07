@@ -1,0 +1,8 @@
+<!--pages/list/index/index.wxml-->
+
+<view>
+	<view class="list-grid m-20 dp-flex-between" wx:for="{{listData}}" wx:index="index" wx:key="index" wx:for-item="item">
+		<view>{{item.title}}</view>
+		<view>></view>
+	</view>
+</view>

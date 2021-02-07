@@ -1,0 +1,24 @@
+/**app.wxss**/
+body {
+  color: #333;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.m-20 {
+  margin: 20rpx;
+}
+
+.dp-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

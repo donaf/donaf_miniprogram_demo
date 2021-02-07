@@ -1,0 +1,15 @@
+{
+  "name": "donaf-miniprogram-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "donaf",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.5.0",
+    "miniprogram-computed": "^2.1.1"
+  }
+}

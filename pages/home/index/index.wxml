@@ -1,0 +1,7 @@
+<!--pages/home/index/index.wxml-->
+
+<view>
+  <block wx:for="{{homeList}}" wx:key="key">
+    <van-cell is-link title="{{item.name}}" link-type="navigateTo" url="{{item.url}}" />
+  </block>
+</view>

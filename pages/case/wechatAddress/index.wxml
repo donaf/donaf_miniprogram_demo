@@ -1,0 +1,6 @@
+<!--pages/case/wechatAddress/index.wxml-->
+
+
+<view>
+  <button bindtap="getAddress" type="primary">获取地址</button>
+</view>
