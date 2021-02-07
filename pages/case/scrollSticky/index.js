@@ -1,26 +1,31 @@
-// pages/home/index/index.js
+// pages/case/scrollSticky/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    homeList: [
-      {
-        url: '/pages/case/wechatAddress/index',
-        name: '获取微信小程序地址'
-      },
-      {
-        url: '/pages/case/scrollSticky/index',
-        name: '滚动到一定高度固定页面'
-      }
-    ]
+    active: 0,
+    tabList: [
+      { title: 'tab1' },
+      { title: 'tab2' },
+      { title: 'tab3' },
+      { title: 'tab4' },
+    ],
+    statusBarHeight: 0,
+    navHeight: 0,
+    fixedNav: false,
+    showToTop: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      navHeight: wx.getStorageSync('navHeight'),
+      statusBarHeight: wx.getStorageSync('statusBarHeight')
+    })
   },
 
   /**
@@ -62,7 +67,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
   },
 
   /**
@@ -70,5 +74,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  scroll(e) {
+    let isFixed = e.detail.isFixed
+    this.setData({
+      fixedNav: isFixed
+    })
   }
 })

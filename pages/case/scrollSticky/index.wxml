@@ -1,0 +1,26 @@
+<!--pages/case/scrollSticky/index.wxml-->
+<view class="custom-navBar"
+  style="padding-top:{{statusBarHeight}}px;height:{{navHeight}}px; line-height:{{navHeight- statusBarHeight}}px">
+  <view>
+    自定义标题栏
+  </view>
+</view>
+<scroll-view scroll-y class="scrollSticky" bindscroll="bindscroll" style="padding-top:{{navHeight}}px">
+  <view class="header">
+    header content
+  </view>
+
+  <!-- <van-sticky offset-top="{{ navHeight }}" bind:scroll="scroll"> -->
+  <van-sticky offset-top="{{ navHeight }}">
+    <view class="tab" id="tab">
+      tab内容
+    </view>
+  </van-sticky>
+
+  <view>
+    <view wx:for="{{100}}" wx:key="key">
+      {{item}}
+    </view>
+  </view>
+
+</scroll-view>

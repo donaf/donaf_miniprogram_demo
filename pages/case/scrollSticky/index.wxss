@@ -1,0 +1,34 @@
+/* pages/case/scrollSticky/index.wxss */
+
+.custom-navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 300rpx;
+  text-align: center;
+  color: #fff;
+  background-color: blueviolet;
+  text-transform: uppercase;
+}
+
+.scrollSticky {
+  height: 100%;
+}
+
+.tab {
+  height: 100rpx;
+  background: yellow;
+}

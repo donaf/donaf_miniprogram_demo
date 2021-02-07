@@ -5,7 +5,8 @@
     "pages/list/index/index",
     "pages/my/index/index",
     "pages/list/form/index",
-    "pages/case/wechatAddress/index"
+    "pages/case/wechatAddress/index",
+    "pages/case/scrollSticky/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -32,8 +32,22 @@ App({
         }
       }
     })
+
+    this.getSystemInfoSyncData()
   },
   globalData: {
     userInfo: null
+  },
+  getSystemInfoSyncData() {
+    let menuButtonObject = wx.getMenuButtonBoundingClientRect();
+    wx.getSystemInfo({
+      success(res) {
+        const { statusBarHeight } = res
+        const { top, height } = menuButtonObject
+        let navHeight = statusBarHeight + height + (top - statusBarHeight) * 2;
+        wx.setStorageSync('navHeight', navHeight)
+        wx.setStorageSync('statusBarHeight', statusBarHeight)
+      }
+    })
   }
 })
